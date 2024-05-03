@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs')%>
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="swiper-bundle.min.css" />
+
+<style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      height: 10em;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @media (min-width:900px) {
+        .swiper-slide{
+            height: 18em;
+        }
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+<body>
+
+    <header>
+        <%- include('./partials/nav.ejs')%>
+    </header>
+
+    <main class="container mt-5 pt-5">
+
+        <div class="all-news mt-5 pt-5">
+              <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/basilica.jpg" alt="">
+                        
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/aid.jpg" alt="">
+                        
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/gettyimages-1183683145-612x612.jpg" alt="">
+                        
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/basilica.jpg" alt="">
+                        
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/image1.jpg" alt="">
+                        
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/image3.jpg" alt="">
+                        
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/basilica.jpg" alt="">
+                        
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/wyd.jpg" alt="">
+                        
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/ngb.png" alt="">
+                        
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <div class="news-area mt-5 text-center">
+            <h2><b>News <span>Arena</span></b></h2>
+
+            <div class="news mt-3">
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="/news1" class="text-reset link-opacity-50-hover fs-5 link-underline-opacity-0">
+                            <img src="images/gettyimages-1183683145-612x612.jpg" alt=""><br>
+                            <b>Title</b>: Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis dicta, iure quia iusto labore!
+                        </a> 
+                    </li>
+                    <li>
+                        <a href="/news2" class="text-reset link-opacity-50-hover fs-5 link-underline-opacity-0">
+                            <img src="images/wyd.jpg" alt=""><br>
+                            <b>Title</b>: Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis dicta, iure quia iusto labore!
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/news3" class="text-reset link-opacity-50-hover fs-5 link-underline-opacity-0">
+                            <img src="images/ngb.png" alt=""><br>
+                            <b>Title</b>: Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis dicta, iure quia iusto labore!
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/news4" class="text-reset link-opacity-50-hover fs-5 link-underline-opacity-0">
+                            <img src="images/basilica.jpg" alt=""><br>
+                            <b>Title</b>: Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis dicta, iure quia iusto labore!
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/news5" class="text-reset link-opacity-50-hover fs-5 link-underline-opacity-0">
+                            <img src="images/aid.jpg" alt=""><br>
+                            <b>Title</b>: Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis dicta, iure quia iusto labore!
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/news6" class="text-reset link-opacity-50-hover fs-5 link-underline-opacity-0">
+                            <img src="images/aid.jpg" alt=""><br>
+                        <b>Title</b>: Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis dicta, iure quia iusto labore!
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    
+
+    <%- include('./partials/footer.ejs')%>
+
+</body>
+
+<script src="swiper-bundle.min.js"></script>
+
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      slidesPerGroup: 2,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      }
+    });
+  </script>
+</html>

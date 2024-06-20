@@ -41,7 +41,7 @@ iframe{
     display: flex;
     flex-direction: column;
     color: rgb(3, 3, 3);
-    background-color: rgb(255, 251, 0);
+    background-color: #E7E9E8;
 }
 
 .main-content{

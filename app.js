@@ -19,27 +19,27 @@ app.get('/about', (req, res) => {
     res.render('about')
 })
 
-app.get('/news1', (req, res) => {
+app.get('/title-1', (req, res) => {
     res.render('news1')
 })
 
-app.get('/news2', (req, res) => {
+app.get('/title-2', (req, res) => {
     res.render('news2')
 })
 
-app.get('/news3', (req, res) => {
+app.get('/title-3', (req, res) => {
     res.render('news3')
 })
 
-app.get('/news4', (req, res) => {
+app.get('/title-4', (req, res) => {
     res.render('news4')
 })
 
-app.get('/news5', (req, res) => {
+app.get('/title-5', (req, res) => {
     res.render('news5')
 })
 
-app.get('/news6', (req, res) => {
+app.get('/title-6', (req, res) => {
     res.render('news6')
 })
 

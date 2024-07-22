@@ -217,5 +217,7 @@ footer img:hover{
         flex-direction: column;
     }
 
-    
+    footer ul{
+        max-width: 80%
+    }
 }
